@@ -261,12 +261,27 @@ function detalle(celular)
 function listaFavoritos()
 {
     const divLista = document.createElement('div');
-    divLista.className = 'lista';
+    divLista.className = 'listaFav';
     const array = favoritos;
     main.appendChild(divLista);
+
+    const eli = document.createElement('div');
+    eli.className = "itemEliminar";
+    divLista.appendChild(eli);
+
+    const ckTotal = document.createElement('input');
+    ckTotal.className = 'checkSquare';
+    ckTotal.setAttribute("type","checkbox");
+    eli.appendChild(ckTotal);
+
+    const botonEl = document.createElement('button');
+    botonEl.className = 'butEliminar';
+    botonEl.textContent = 'Eliminar';
+    eli.appendChild(botonEl);
+
     for (let index = 0; index < array.length; index++) {
         const temp = document.createElement('div');
-        temp.className = 'itemLista';
+        temp.className = 'itemFav';
 
         const celImg = document.createElement('img');
         celImg.src = array[index].picture;

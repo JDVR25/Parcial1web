@@ -350,3 +350,59 @@ input {
 
   color: rgba(0, 0, 0, 0.67);
 }
+
+.listaFav {
+  position: absolute;
+  left: 100px;
+  top: 163px;
+}
+
+.itemEliminar {
+  width: 1240px;
+  height: 89px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.itemFav {
+  position: absolute;
+  width: 1240px;
+  height: 221px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.checkSquare {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 40px;
+  top: 30px;
+
+  background: #c4c4c4;
+}
+
+.butEliminar {
+  position: absolute;
+  width: 200px;
+  height: 51px;
+  left: 100px;
+  top: 15px;
+
+  background: #e1677d;
+  border-radius: 20px;
+  border: none;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #ffffff;
+}
